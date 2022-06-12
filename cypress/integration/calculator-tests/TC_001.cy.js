@@ -54,7 +54,7 @@ describe('Test Calculator Opperations', () => {
       calculatorPage.click_on_number_pad(2)
 
       //Assertion
-      calculatorPage.validateOutput(4)
+      calculatorPage.validateOutput(4)//fail on purpose
     })
 })
 
