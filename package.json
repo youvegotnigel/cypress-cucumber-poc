@@ -9,7 +9,7 @@
     "cy:run": "cypress run"
   },
   "keywords": [],
-  "author": "youvegotnigle",
+  "author": "youvegotnigel",
   "license": "ISC",
   "dependencies": {
     "cypress": "^9.7.0",
