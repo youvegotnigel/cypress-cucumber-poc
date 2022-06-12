@@ -108,6 +108,19 @@ afterEach(() => {
   });
 ```
 
+### 7. Configure VS Code. Use `ctrl + shift + p` and search for  `Preferences: Open Settings (JSON)` and open VS Codes settings. Add the following in `settings.json`
+
+```
+ "[feature]":{
+        "editor.formatOnSave": true,
+    },
+    "cucumberautocomplete.strictGherkinCompletion": true,
+    "cucumberautocomplete.steps": [
+        "cypress/integration/**/*.js",
+        "cypress/e2e/**/*.js",
+    ]
+```
+
 ## Features
 - BDD Framework
 - Page Object Model
