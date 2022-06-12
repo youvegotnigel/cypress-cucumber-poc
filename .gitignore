@@ -67,6 +67,10 @@ typings/
 # Package files
 *.jar
 
+# Allure report
+allure-report
+allure-results
+
 # Cypress folders
 cypress/reports
 cypress/videos
