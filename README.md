@@ -155,6 +155,7 @@ npx cypress run --browser "chrome" --spec "cypress\integration\Calculator\Operat
 npm run cy:report
 ```  
 
+## Cucumber Report
 
 
 ## Tags usage
