@@ -1,12 +1,12 @@
 # Cypress-Cucumber-POC
 This project is created to show how we can leverage Cucumber BDD framework in Cypress. Steps involved in configuring your project are following:
 
-# Pre-Requisites
+## Pre-Requisites
 * Node JS and NPM - [Node](https://nodejs.org/en/download/) 
 * IDE - [VS Code](https://code.visualstudio.com/download) 
 
 
-# Set Up
+## Set Up
 ```
 npm init -y
 npm install cypress@9.7.0
@@ -16,17 +16,17 @@ npm install multiple-cucumber-html-reporter
 npm install --save-dev cypress-cucumber-attach-screenshots-to-failed-steps 
 ```  
 
-# Cypress Help
+## Cypress Help
 ```
 npx cypress run --help
 ```  
 
-# Dependencies
+## Dependencies
 * cypress - v9.7.0
 * cypress-cucumber-preprocessor - v4.3.1
 * multiple-cucumber-html-reporter - v1.21.2
 
-# Configuration
+## Configuration
 
 ### 1. Add cypress-cucumber-preprocessor by add the following in `cypress/plugins/index.js`:
 
@@ -108,12 +108,12 @@ afterEach(() => {
   });
 ```
 
-# Features
+## Features
 - BDD Framework
 - Page Object Model
 - Cucumber HTML Report
 
-# Documentation
+## Documentation
 - https://github.com/badeball/cypress-cucumber-preprocessor
 - https://github.com/wswebcreation/multiple-cucumber-html-reporter
 - https://github.com/dane-harnett/cypress-cucumber-attach-screenshots-to-failed-steps
@@ -121,7 +121,7 @@ afterEach(() => {
 - https://cucumber.io/docs/gherkin/reference/
 
 
-# How to Run and Generate Report
+## How to Run and Generate Report
 
 ### GUI Mode
 ```
@@ -144,7 +144,7 @@ npm run cy:report
 
 
 
-# Tags usage
+## Tags usage
 
 ### Tagging tests
 
@@ -153,5 +153,5 @@ npm run cy:report
 ###### usage of `and` 
 
 
-# Author
+## Author
 * **Nigel Mulholland** - [Linkedin](https://www.linkedin.com/in/nigel-mulholland/) 
