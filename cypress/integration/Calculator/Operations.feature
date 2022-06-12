@@ -13,7 +13,6 @@ Feature: Verify Calculator Operations
       | firstOperand | secondOperand | result |
       | 2            | 9             | 11     |
       | 8            | 8             | 16     |
-      | 8            | 3             | 13     |
 
   Scenario Outline: Verify Subtraction
     When I click on <firstOperand>
@@ -25,7 +24,6 @@ Feature: Verify Calculator Operations
       | firstOperand | secondOperand | result |
       | 1            | 2             | -1     |
       | 8            | 5             | 3      |
-      | 8            | 6             | 3      |
 
   Scenario Outline: Verify Multipication
     When I click on <firstOperand>
