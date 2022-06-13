@@ -1,7 +1,7 @@
 pipeline {
     //The agent section specifies where the entire Pipeline, or a specific stage, 
     //will execute in the Jenkins environment depending on where the agent section is placed.
-    agent any
+    agent 'windows-agent'
     
     //The environment directive specifies a sequence of key-value pairs which will be defined
     //as environment variables for all steps, or stage-specific steps, depending on where the environment directive is located within the Pipeline.
@@ -55,7 +55,7 @@ pipeline {
             //The script step takes a block of Scripted Pipeline and executes that in the Declarative Pipeline. 
             //For most use-cases, the script step should be unnecessary in Declarative Pipelines, but it can provide
             //a useful "escape hatch." script blocks of non-trivial size and/or complexity should be moved into Shared Libraries instead.
-            
+
             // script {
             //     BUILD_USER = getBuildUser()
             // }
