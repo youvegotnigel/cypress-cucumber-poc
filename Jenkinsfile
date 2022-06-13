@@ -47,8 +47,7 @@ pipeline {
         
         stage('Deploy'){
             steps {
-                echo "Generating Reports"
-                bat "npm run cy:report"
+                echo "Deploying"
             }
         }
     }
@@ -58,6 +57,11 @@ pipeline {
             //The script step takes a block of Scripted Pipeline and executes that in the Declarative Pipeline. 
             //For most use-cases, the script step should be unnecessary in Declarative Pipelines, but it can provide
             //a useful "escape hatch." script blocks of non-trivial size and/or complexity should be moved into Shared Libraries instead.
+
+                steps {
+                    echo "Generating Reports"
+                    bat "npm run cy:report"
+                }
 
             // script {
             //     BUILD_USER = getBuildUser()
