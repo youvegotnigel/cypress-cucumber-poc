@@ -1,7 +1,8 @@
 pipeline {
     //The agent section specifies where the entire Pipeline, or a specific stage, 
     //will execute in the Jenkins environment depending on where the agent section is placed.
-    agent { label 'windows-agent-nigel'
+    agent { 
+        label 'windows-agent-nigel'
      }
     
     //The environment directive specifies a sequence of key-value pairs which will be defined
@@ -66,7 +67,7 @@ pipeline {
             //     message: "*${currentBuild.currentResult}:* Job ${env.JOB_NAME} build ${env.BUILD_NUMBER} by ${BUILD_USER}\n Tests:${SPEC} executed at ${BROWSER} \n More info at: ${env.BUILD_URL}HTML_20Report/"
             
             publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: true, reportDir: 'cypress/reports', reportFiles: 'index.html', reportName: 'HTML Report', reportTitles: ''])            
-            deleteDir()
+            //deleteDir()
         }
     }
 }
