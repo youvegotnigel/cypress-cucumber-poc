@@ -47,7 +47,8 @@ pipeline {
         
         stage('Deploy'){
             steps {
-                echo "Deploying"
+                echo "Generating Reports"
+                bat "npm run cy:report"
             }
         }
     }
