@@ -1,7 +1,7 @@
 pipeline {
     //The agent section specifies where the entire Pipeline, or a specific stage, 
     //will execute in the Jenkins environment depending on where the agent section is placed.
-    agent { label 'windows-agent'
+    agent { label 'windows-agent-nigel'
      }
     
     //The environment directive specifies a sequence of key-value pairs which will be defined
