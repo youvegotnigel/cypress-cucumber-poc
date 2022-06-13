@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "reports:clear": "if exist cypress\\videos rmdir /q /s cypress\\videos && if exist cypress\\reports rmdir /q /s cypress\\reports && if exist cypress\\screenshots rmdir /q /s cypress\\screenshots",
     "cy:report": "node ./cypress/report.js",
     "cy:run": "cypress run"
   },

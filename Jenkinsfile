@@ -35,6 +35,9 @@ pipeline {
             //The steps section defines a series of one or more steps to be executed in a given stage directive.
             steps {
                 echo "Building the application"
+
+                echo "Deleting previous reports"
+                bat "npm run reports:clear"
             }
         }
         
@@ -59,8 +62,8 @@ pipeline {
             //a useful "escape hatch." script blocks of non-trivial size and/or complexity should be moved into Shared Libraries instead.
 
                 
-                    echo "Generating Reports"
-                    bat "npm run cy:report"
+            echo "Generating Reports"
+            bat "npm run cy:report"
                 
 
             // script {
