@@ -121,6 +121,12 @@ afterEach(() => {
     ]
 ```
 
+### 8. Add the following code into `cypress/support/index.js` to use `cy.xpath()` function:
+
+```
+require('cypress-xpath')
+```
+
 ## Features
 - BDD Framework
 - Page Object Model
