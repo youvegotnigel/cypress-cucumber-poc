@@ -1,6 +1,6 @@
 Feature: Verify Login
 
-
+    @stage
     Scenario Outline: Verify login with valid credentials
         Given User is navigated to login page
         And User enter details as below:
@@ -24,10 +24,13 @@ Feature: Verify Login
         Then Error message should be displayed as below:
             | error_message |
             | <em>          |
-
+        @stage
         Examples:
-            | un       | pw                   | em                        |
-            | tom      | test                 | Your username is invalid! |
-            | tom      | SuperSecretPassword! | Your username is invalid! |
-            | tomsmith | test                 | Your password is invalid! |
-            | tom      | test                 | Your password is invalid! |
+            | un  | pw                   | em                        |
+            | tom | test                 | Your username is invalid! |
+            | tom | SuperSecretPassword! | Your username is invalid! |
+        @ignore
+        Examples:
+            | un       | pw   | em                        |
+            | tomsmith | test | Your password is invalid! |
+            | tom      | test | Your password is invalid! |

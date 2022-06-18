@@ -158,6 +158,8 @@ npm run cy:report
 #### Run Specific Feature
 ```
 npx cypress run --browser "chrome" --spec "cypress\integration\Calculator\Operations.feature"
+or
+npx cypress-tags run -g 'cypress/integration/LoginTest/Login.feature' --browser "chrome"
 npm run cy:report
 ```  
 
