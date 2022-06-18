@@ -18,8 +18,7 @@ And('User enter details as below:',(dataTable)=>{
 });
 
 And('User should be logged in',()=>{
-    cy.url().should('contain', 'secure')
-    cy.url().should('include', 'secure')
+    loginPage.isLoggedIn();
 });
 
 And('Error message should be displayed as below:',(dataTable)=>{

@@ -26,6 +26,11 @@ class loginPage{
     static getErrorMessage(text){
         this.elements.errorMessage().should('include.text', text)
     }
+
+    static isLoggedIn(){
+        cy.url().should('contain', 'secure')
+        cy.url().should('include', 'secure')
+    }
 }
 
 export default loginPage;
