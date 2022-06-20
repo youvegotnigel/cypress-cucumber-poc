@@ -1,3 +1,4 @@
+@stage
 Feature: Verify Calculator Operations
 
   Background:
