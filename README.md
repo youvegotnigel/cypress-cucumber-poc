@@ -153,6 +153,14 @@ npm run cy:report
 #### Run All Features
 ```
 npm run cy:run
+npm run allure:clear
+npm run cy:report
+npm run allure:report
+```
+
+#### Run All Features and Generate Allure Report
+```
+npm run cy:run
 npm run cy:report
 ```
 #### Run Specific Feature
