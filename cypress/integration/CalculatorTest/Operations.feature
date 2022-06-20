@@ -46,4 +46,4 @@ Feature: Verify Calculator Operations
     Examples:
       | firstOperand | secondOperand | result |
       | 6            | 2             | 3      |
-      | 9            | 3             | 2      |
+      | 9            | 3             | 3      |
