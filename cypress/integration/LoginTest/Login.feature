@@ -26,11 +26,8 @@ Feature: Verify Login
             | <em>          |
         @stage
         Examples:
-            | un  | pw                   | em                        |
-            | tom | test                 | Your username is invalid! |
-            | tom | SuperSecretPassword! | Your username is invalid! |
-        @stage
-        Examples:
-            | un       | pw   | em                        |
-            | tomsmith | test | Your password is invalid! |
+            | un       | pw                   | em                        |
+            | tom      | test                 | Your username is invalid! |
+            | tom      | SuperSecretPassword! | Your username is invalid! |
+            | tomsmith | test                 | Your password is invalid! |
 #| tom | test | Your password is invalid! |
