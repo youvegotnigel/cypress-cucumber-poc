@@ -44,7 +44,7 @@ pipeline {
         stage('Testing') {
             steps {
                 bat "npm i"
-                bat "npx cypress run --browser ${BROWSER} --spec ${SPEC}"
+                bat "npx cypress run --browser ${BROWSER} --spec ${SPEC} --env allure=true"
             }
         }
         
@@ -64,6 +64,7 @@ pipeline {
                 
             echo "Generating Reports"
             bat "npm run cy:report"
+            bat "npm run allure:report"
                 
 
             // script {
@@ -77,6 +78,7 @@ pipeline {
             publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: true, reportDir: 'cypress/reports', reportFiles: 'index.html', reportName: 'HTML Report', reportTitles: ''])            
             
             cucumber failedFeaturesNumber: -1, failedScenariosNumber: -1, failedStepsNumber: -1, fileIncludePattern: '**/*.cucumber.json', hideEmptyHooks: true, pendingStepsNumber: -1, skipEmptyJSONFiles: true, skippedStepsNumber: -1, sortingMethod: 'ALPHABETICAL', undefinedStepsNumber: -1
+            allure includeProperties: false, jdk: '', results: [[path: 'allure-results']]
             //deleteDir()
         }
     }

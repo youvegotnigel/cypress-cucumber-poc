@@ -1,3 +1,6 @@
 {
-    "testFiles": "**/*.{feature,features}"
+    "testFiles": ["**/*.{feature,features}"],
+    "env": {
+        "TAGS": "@stage and not @ignore"
+    }
 }

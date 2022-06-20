@@ -121,6 +121,12 @@ afterEach(() => {
     ]
 ```
 
+### 8. Add the following code into `cypress/support/index.js` to use `cy.xpath()` function:
+
+```
+require('cypress-xpath')
+```
+
 ## Features
 - BDD Framework
 - Page Object Model
@@ -147,11 +153,21 @@ npm run cy:report
 #### Run All Features
 ```
 npm run cy:run
+npm run allure:clear
+npm run cy:report
+npm run allure:report
+```
+
+#### Run All Features and Generate Allure Report
+```
+npm run cy:run
 npm run cy:report
 ```
 #### Run Specific Feature
 ```
 npx cypress run --browser "chrome" --spec "cypress\integration\Calculator\Operations.feature"
+or
+npx cypress-tags run -g 'cypress/integration/LoginTest/Login.feature' --browser "chrome"
 npm run cy:report
 ```  
 
