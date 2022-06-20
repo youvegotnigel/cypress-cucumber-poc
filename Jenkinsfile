@@ -44,7 +44,7 @@ pipeline {
         stage('Testing') {
             steps {
                 bat "npm i"
-                bat "npx cypress run --browser ${BROWSER} --spec ${SPEC}"
+                bat "npx cypress run --browser ${BROWSER} --spec ${SPEC} --env allure=true"
             }
         }
         
@@ -64,6 +64,7 @@ pipeline {
                 
             echo "Generating Reports"
             bat "npm run cy:report"
+            bat "npm run allure:report"
                 
 
             // script {
