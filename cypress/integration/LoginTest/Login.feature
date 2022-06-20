@@ -30,4 +30,4 @@ Feature: Verify Login
             | tom      | test                 | Your username is invalid! |
             | tom      | SuperSecretPassword! | Your username is invalid! |
             | tomsmith | test                 | Your password is invalid! |
-            | tom      | test                 | Your password is invalid! |
+            | tom      | test                 | Your username is invalid! |
