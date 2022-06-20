@@ -18,7 +18,6 @@
   "license": "ISC",
   "dependencies": {
     "cypress": "^9.7.0",
-    "mocha-allure-reporter": "^1.4.0",
     "multiple-cucumber-html-reporter": "^1.21.2"
   },
   "devDependencies": {
