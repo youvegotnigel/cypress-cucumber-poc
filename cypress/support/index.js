@@ -20,6 +20,7 @@ import './commands'
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
 require('cypress-xpath')
+require('@shelex/cypress-allure-plugin')
 
 afterEach(() => {
     const screenshotsFolder = Cypress.config("screenshotsFolder");
