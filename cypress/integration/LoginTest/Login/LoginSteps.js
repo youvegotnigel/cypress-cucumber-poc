@@ -1,5 +1,5 @@
 import { Given, And } from "cypress-cucumber-preprocessor/steps"
-import  loginPage from '../../../page-objects/loginPage'
+import  loginPage from '../../../support/page-objects/loginPage'
 
 
 Given('User is navigated to login page',()=>{
